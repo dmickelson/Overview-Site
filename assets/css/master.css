@@ -1,5 +1,5 @@
 body {
-/*
+  /*
   font-family: Arial, Helvatica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -11,9 +11,16 @@ body {
 }
 
 /* Global */
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   overflow: hidden;
 }
 
@@ -37,6 +44,52 @@ ul {
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* Navigation */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar,
+.navbar-header,
+.navbar-brand img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.navbar {
+  background-color: #000000 !important;
+  opacity: 0.98;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.688rem;
+  letter-spacing: 1px;
+  padding: 0 !important;
+  position: relative;
+  text-transform: uppercase;
+}
+.navbar .nav-link.active:before {
+  background-color: #ffffff !important;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  margin-bottom: -2px;
+  position: absolute;
+  width: 100%;
 }
 
 /* Header */
@@ -74,7 +127,8 @@ header nav {
   margin-top: 10px;
 }
 
-header .highlight, header .current a {
+header .highlight,
+header .current a {
   color: #e8491d;
   font-weight: bold;
 }
@@ -84,12 +138,11 @@ header a:hover {
   font-weight: bold;
 }
 
-
 /* Showcase */
 #showcase {
   min-height: 400px;
   /* Move image up within background */
-  background: url('../img/showcase.jpg') no-repeat 0 -400px;
+  background: url("../img/showcase.jpg") no-repeat 0 -400px;
   text-align: center;
   color: white;
 }
@@ -103,8 +156,6 @@ header a:hover {
 #showcase p {
   font-size: 20px;
 }
-
-
 
 /* Boxes */
 
@@ -136,19 +187,19 @@ aside#sidebar {
   margin-top: 10px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea {
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
   width: 90%;
   padding: 5px;
 }
 
 /* Services */
-ul#services li{
+ul#services li {
   list-style: none;
   padding: 20px;
   border: #cccccc solid 1px;
   margin-bottom: 5px;
   background: #e6e6e6;
-
 }
 
 /* Footer */
@@ -165,7 +216,7 @@ footer {
 /* Main thing is to remove floats */
 
 /* Tablet size */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   header #branding,
   header nav,
   header nav li,
@@ -173,8 +224,7 @@ footer {
   #newsletter form,
   #boxes .box,
   article#main-col,
-  aside#sidebar
-   {
+  aside#sidebar {
     float: none;
     text-align: center;
     width: 100%;
@@ -188,14 +238,16 @@ footer {
     margin-top: 40px;
   }
 
-  #newsletter button, .quote button {
+  #newsletter button,
+  .quote button {
     display: block;
     width: 100%;
   }
 
-  #newsletter form input[type="email"], .quote input, .quote textarea {
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
     width: 100%;
     margin-bottom: 5px;
   }
-
 }
