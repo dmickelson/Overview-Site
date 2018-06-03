@@ -1,17 +1,29 @@
-body {
-  /*
+/* Theme */
+body,
+html {
   font-family: Arial, Helvatica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  */
-  font: 15px/1.5 Arial, Helvatica, sans-serif;
+  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #f4f4f4;
+  letter-spacing: 0.025rem;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:focus {
+  outline: none !important;
 }
 
 /* Global */
 
+/* Background color */
 .bg-dark {
   background-color: #343a40 !important;
 }
@@ -46,7 +58,10 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Navigation */
+/*
+* Position
+*/
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -55,6 +70,9 @@ ul {
   z-index: 1030;
 }
 
+/*
+* Navigation
+*/
 .navbar,
 .navbar-header,
 .navbar-brand img {
@@ -138,70 +156,6 @@ header a:hover {
   font-weight: bold;
 }
 
-/* Showcase */
-#showcase {
-  min-height: 400px;
-  /* Move image up within background */
-  background: url("../img/showcase.jpg") no-repeat 0 -400px;
-  text-align: center;
-  color: white;
-}
-
-#showcase h1 {
-  margin-top: 100px;
-  font-size: 55px;
-  margin-bottom: 10px;
-}
-
-#showcase p {
-  font-size: 20px;
-}
-
-/* Boxes */
-
-#boxes {
-  margin_top: 20px;
-}
-
-#boxes .box {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  text-align: center;
-}
-
-#boxes .bow img {
-  width: 90px;
-}
-
-/* Main-col */
-article#main-col {
-  float: left;
-  width: 65%;
-}
-
-/* Sidebar */
-aside#sidebar {
-  float: right;
-  width: 30%;
-  margin-top: 10px;
-}
-
-aside#sidebar .quote input,
-aside#sidebar .quote textarea {
-  width: 90%;
-  padding: 5px;
-}
-
-/* Services */
-ul#services li {
-  list-style: none;
-  padding: 20px;
-  border: #cccccc solid 1px;
-  margin-bottom: 5px;
-  background: #e6e6e6;
-}
-
 /* Footer */
 footer {
   padding: 20px;
@@ -250,4 +204,13 @@ footer {
     width: 100%;
     margin-bottom: 5px;
   }
+}
+
+@media (min-width: 992px) .navbar-expand-lg {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
