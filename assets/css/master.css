@@ -21,15 +21,8 @@ a:focus {
   outline: none !important;
 }
 
-/* Global */
-
-/* Background color */
-.bg-dark {
-  background-color: #343a40 !important;
-}
-
 .container {
-  width: 100%;
+  width: 80%;
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -68,46 +61,6 @@ ul {
   right: 0;
   left: 0;
   z-index: 1030;
-}
-
-/*
-* Navigation
-*/
-.navbar,
-.navbar-header,
-.navbar-brand img {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.navbar {
-  background-color: #000000 !important;
-  opacity: 0.98;
-  padding-bottom: 0;
-  padding-top: 0;
-}
-
-.navbar .nav-link {
-  color: #ffffff !important;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.688rem;
-  letter-spacing: 1px;
-  padding: 0 !important;
-  position: relative;
-  text-transform: uppercase;
-}
-.navbar .nav-link.active:before {
-  background-color: #ffffff !important;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 0;
-  margin-bottom: -2px;
-  position: absolute;
-  width: 100%;
 }
 
 /* Header */
@@ -165,7 +118,7 @@ footer {
   text-align: center;
 }
 
-/* Media Queries */
+/* Responsive */
 
 /* Main thing is to remove floats */
 
@@ -204,13 +157,4 @@ footer {
     width: 100%;
     margin-bottom: 5px;
   }
-}
-
-@media (min-width: 992px) .navbar-expand-lg {
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
 }
