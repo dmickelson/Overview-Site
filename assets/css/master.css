@@ -102,7 +102,7 @@ header nav {
 
 header .highlight,
 header .current a {
-  color: #e8491d;
+  color: cyan;
   font-weight: bold;
 }
 
